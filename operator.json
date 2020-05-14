@@ -1,9 +1,9 @@
 {
-  "name": "Median",
-  "description": "Return the medium value of a cell",
-  "tags": ["basic statistics"],
+  "name": "Linear regression",
+  "description": "Return the intercept and slope of a linear regression in a cell",
+  "tags": ["linear model"],
   "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/template_operator"],
+  "urls": ["https://github.com/tercen/lm_operator"],
   "properties": []
 }
 
