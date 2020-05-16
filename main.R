@@ -24,7 +24,12 @@ do.lm <- function(df) {
   
 }
 
-(ctx <- tercenCtx())  %>% 
+ctx <- tercenCtx()
+
+if(inherits(try(ctx$select(".x")), 'try-error')) stop("x axis is missing.")
+if(inherits(try(ctx$select(".y")), 'try-error')) stop("y axis is missing.")
+
+ctx %>% 
   select(.x, .y, .ri, .ci) %>% 
   group_by(.ri, .ci) %>%
   do(do.lm(.)) %>%

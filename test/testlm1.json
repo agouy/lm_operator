@@ -1,0 +1,13 @@
+{
+  "kind": "OperatorUnitTest",
+  "name": "testlm1",
+  "namespace": "test",
+  "inputDataUri": "CO2.csv",
+  "outputDataUri": ["output.csv"],
+  "columns": ["Treatment"],
+  "rows": ["Plant"],
+  "colors": [],
+  "labels": [],
+  "yAxis": "uptake",
+  "xAxis": "conc"
+}
