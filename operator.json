@@ -4,7 +4,14 @@
   "tags": ["linear model"],
   "authors": ["tercen"],
   "urls": ["https://github.com/agouy/lm_operator"],
-  "properties": []
+  "properties": [
+  {
+    "kind": "BooleanProperty",
+    "name": "intercept.omit",
+    "defaultValue": false,
+    "description": "A logical value indicating whether the intercept should be omitted in the model."
+  }
+  ]
 }
 
 

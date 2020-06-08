@@ -12,7 +12,13 @@ do.lm <- function(df) {
     fit.x = rep(NaN, 2)
   )
   
-  mod <- try(lm(.y ~ .x, data = df))
+  intercept.omit <- as.logical(ctx$op.value('intercept.omit'))
+  if(intercept.omit) {
+    mod <- try(lm(.y ~ .x - 1, data = df))
+  } else {
+    mod <- try(lm(.y ~ .x, data = df))
+  }
+  
   
   if(!inherits(mod, 'try-error')) {
     out$intercept <- mod$coefficients[1]
