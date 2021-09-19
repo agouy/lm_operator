@@ -12,5 +12,6 @@ df_out <- df_out %>%
   left_join(df_col) %>%
   left_join(df_row) %>% 
   ungroup() %>% 
-  select(-.ci, -.ri)
+  select(-.ci, -.ri) %>%
+  mutate_if(is.numeric, format, nsmall = 15)
 write.csv(df_out, file = "./test/output.csv", quote = FALSE, row.names = FALSE)
