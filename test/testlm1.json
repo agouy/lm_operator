@@ -5,7 +5,7 @@
   "inputDataUri": "CO2.csv",
   "outputDataUri": ["output.csv"],
   "columns": ["Treatment"],
-  "rows": ["Plant"],
+  "rows": ["Type"],
   "colors": [],
   "labels": [],
   "yAxis": "uptake",
