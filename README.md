@@ -21,7 +21,7 @@ Output relations|.
 
 The `lm` operator performs a linear regression on each cell.
 
-#### References
+##### References
 
 See [Linear regression on Wikipedia](https://en.wikipedia.org/wiki/Linear_regression) and
 `lm` [R function documentation](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/lm).

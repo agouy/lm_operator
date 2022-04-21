@@ -3,7 +3,7 @@
   "description": "Calculates the intercept and slope of a linear regression in a cell",
   "tags": ["linear model"],
   "authors": ["tercen"],
-  "urls": ["https://github.com/agouy/lm_operator"],
+  "urls": ["https://github.com/tercen/lm_operator"],
   "properties": [
   {
     "kind": "BooleanProperty",

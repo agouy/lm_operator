@@ -7,9 +7,7 @@ do.lm <- function(df, intercept.omit) {
     .ri = df$.ri[1],
     .ci = df$.ci[1],
     intercept = NaN,
-    slope = NaN#,
-    #fit.y = rep(NaN, 2),
-    #fit.x = rep(NaN, 2)
+    slope = NaN
   )
   
   if(intercept.omit) {
@@ -21,8 +19,6 @@ do.lm <- function(df, intercept.omit) {
   if(!inherits(mod, 'try-error')) {
     out$intercept <- mod$coefficients[1]
     out$slope <- mod$coefficients[2]
-    #out$fit.y <- range(mod$fitted.values)
-    #out$fit.x <- range(df$.x)
   }
   return(out)
 }
