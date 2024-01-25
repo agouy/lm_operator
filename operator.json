@@ -1,6 +1,6 @@
 {
   "name": "Linear Regression",
-  "description": "Calculates the intercept and slope of a linear regression in a cell",
+  "description": "Fits a linear regression model to your data.",
   "tags": [
     "statistical testing",
     "linear model"
