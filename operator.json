@@ -1,17 +1,22 @@
 {
   "name": "Linear Regression",
   "description": "Calculates the intercept and slope of a linear regression in a cell",
-  "tags": ["linear model"],
-  "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/lm_operator"],
+  "tags": [
+    "statistical testing",
+    "linear model"
+  ],
+  "authors": [
+    "tercen"
+  ],
+  "urls": [
+    "https://github.com/tercen/lm_operator"
+  ],
   "properties": [
-  {
-    "kind": "BooleanProperty",
-    "name": "intercept.omit",
-    "defaultValue": false,
-    "description": "A logical value indicating whether the intercept should be omitted in the model."
-  }
+    {
+      "kind": "BooleanProperty",
+      "name": "intercept.omit",
+      "defaultValue": false,
+      "description": "A logical value indicating whether the intercept should be omitted in the model."
+    }
   ]
 }
-
-
